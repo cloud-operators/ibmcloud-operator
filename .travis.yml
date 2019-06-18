@@ -1,0 +1,22 @@
+language: go
+go:
+  - "1.11.x"
+dist: xenial
+sudo: required
+services:
+  - docker
+
+env:
+  - INSTALL_MINIKUBE=1 
+
+go_import_path: github.com/cloud-operators/ibmcloud-operator
+
+before_script:
+  - echo "hi there"
+ 
+before_install:
+  - ./tools/travis/minikube-install.sh
+
+script:
+  - echo "hello"
+ 
