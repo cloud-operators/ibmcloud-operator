@@ -12,7 +12,7 @@ env:
 go_import_path: github.com/cloud-operators/ibmcloud-operator
 
 before_script:
-  - echo "hi there"
+  - echo "hi there 2"
  
 before_install:
   - ./tools/travis/minikube-install.sh
